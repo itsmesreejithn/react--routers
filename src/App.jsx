@@ -6,14 +6,14 @@ import Nopage from "./pages/Nopage";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div >
   );
 }
 
