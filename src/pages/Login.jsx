@@ -3,15 +3,23 @@ import { Row, Col, Container, Card, Form, Button } from "react-bootstrap";
 
 const Login = () => {
   return (
-    <Container fluid>
+    <Container fluid className="login-container">
       <Row>
         <Col>
           <Card>
-            <Card.Title>Log In</Card.Title>
+            <Card.Title className="text-center mt-3">Log In</Card.Title>
             <Card.Body>
               <Form>
-                <Form.Control type="email" placeholder="Enter email" />
-                <Form.Control type="password" placeholder="Enter password" />
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  className="mb-3"
+                />
+                <Form.Control
+                  type="password"
+                  placeholder="Enter password"
+                  className="mb-3"
+                />
                 <Button varient="primary-outline" type="submit">
                   Login
                 </Button>
