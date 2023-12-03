@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 const Dashboard = () => {
   return (
-    <Container fluid className="h-100">
+    <Container fluid className="h-100 p-0">
       <Header />
       <Row>
         <Col>
