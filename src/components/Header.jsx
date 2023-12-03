@@ -9,16 +9,16 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Link to="/" className="navLink">
-              <Nav.Link>Home</Nav.Link>
-            </Link>
-            <Link to="/profile" className="navLink">
-              <Nav.Link>Profile</Nav.Link>
-            </Link>
-            <Link to="/dashboard" className="navLink">
-              <Nav.Link>Dash Board</Nav.Link>
-            </Link>
-            <Link to="/login" className="navLink">
+            <Nav.Link>
+              <Link to="/">Home</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/profile">Profile</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/dashboard">Dashboard</Link>
+            </Nav.Link>
+            <Link to="/login">
               <Button variant="outline-primary" className="ms-2">
                 LogIn
               </Button>
