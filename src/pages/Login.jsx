@@ -1,13 +1,14 @@
 import React from "react";
 import { Row, Col, Container, Card, Form, Button } from "react-bootstrap";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Login = () => {
   return (
-    <Container fluid className="p-0">
+    <Container fluid className="p-0 h-100">
       <Header />
-      <Row>
-        <Col>
+      <Row className="mt-3">
+        <Col className="mx-5">
           <Card>
             <Card.Title className="text-center mt-3">Log In</Card.Title>
             <Card.Body>
@@ -30,6 +31,7 @@ const Login = () => {
           </Card>
         </Col>
       </Row>
+      <Footer />
     </Container>
   );
 };
