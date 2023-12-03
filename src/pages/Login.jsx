@@ -1,9 +1,11 @@
 import React from "react";
 import { Row, Col, Container, Card, Form, Button } from "react-bootstrap";
+import Header from "../components/Header";
 
 const Login = () => {
   return (
-    <Container fluid className="login-container">
+    <Container fluid className="p-0">
+      <Header />
       <Row>
         <Col>
           <Card>
