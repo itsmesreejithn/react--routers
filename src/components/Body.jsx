@@ -2,7 +2,7 @@ import React from "react";
 
 const Body = () => {
   return (
-    <div className="body-component">
+    <div className="body-component fw-bolder fs-5">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iste
       voluptates laborum, rerum dolore consequatur officia cum sequi dolor,
       tempora asperiores iure fuga obcaecati, provident rem at beatae. Delectus
