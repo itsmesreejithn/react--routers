@@ -18,6 +18,9 @@ const Header = () => {
             <Nav.Link>
               <Link to="/dashboard">Dashboard</Link>
             </Nav.Link>
+            <Nav.Link>
+              <Link to="/about">About</Link>
+            </Nav.Link>
             <Link to="/login">
               <Button variant="outline-primary" className="ms-2">
                 LogIn

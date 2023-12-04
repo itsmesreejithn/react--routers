@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import PrivateRouter from "./components/PrivateRouter";
 import { useState } from "react";
+import About from "./pages/About";
 function App() {
   let userData = {
     firstName: "Akarsh",
@@ -51,6 +52,7 @@ function App() {
               </PrivateRouter>
             }
           />
+          <Route path="about" element={<About />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
       </BrowserRouter>
