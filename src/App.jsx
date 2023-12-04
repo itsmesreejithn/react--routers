@@ -23,7 +23,10 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
+          <Route
+            index
+            element={<Home isUserAuthenticated={isUserAuthenticated} />}
+          />
           <Route
             path="login"
             element={

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const Header = () => {
+const Header = ({ isUserAuthenticated }) => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
@@ -21,11 +21,15 @@ const Header = () => {
             <Nav.Link>
               <Link to="/about">About</Link>
             </Nav.Link>
-            <Link to="/login">
-              <Button variant="outline-primary" className="ms-2">
-                LogIn
-              </Button>
-            </Link>
+            {isUserAuthenticated ? (
+              <></>
+            ) : (
+              <Link to="/login">
+                <Button variant="outline-primary" className="ms-2">
+                  LogIn
+                </Button>
+              </Link>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

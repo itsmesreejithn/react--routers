@@ -3,10 +3,10 @@ import Header from "../components/Header";
 import Body from "../components/Body";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Home = ({ isUserAuthenticated }) => {
   return (
     <div className="home-page">
-      <Header />
+      <Header isUserAuthenticated={isUserAuthenticated} />
       <Body />
       <Footer />
     </div>
