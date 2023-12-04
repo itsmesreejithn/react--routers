@@ -6,9 +6,8 @@ import Nopage from "./pages/Nopage";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
-import { useEffect, useState } from "react";
 import PrivateRouter from "./components/PrivateRouter";
-
+import { useState } from "react";
 function App() {
   let userData = {
     firstName: "Akarsh",
@@ -34,7 +33,7 @@ function App() {
             }
           />
           <Route
-            path="/dashboard"
+            path="dashboard"
             element={
               <PrivateRouter isUserAuthenticated={isUserAuthenticated}>
                 <Dashboard
@@ -45,7 +44,7 @@ function App() {
             }
           />
           <Route
-            path="/profile"
+            path="profile"
             element={
               <PrivateRouter isUserAuthenticated={isUserAuthenticated}>
                 <Profile userData={userData} />
