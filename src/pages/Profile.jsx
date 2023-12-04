@@ -3,7 +3,7 @@ import { Col, Container, Row, Card, Form } from "react-bootstrap";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const Profile = () => {
+const Profile = ({ userData }) => {
   return (
     <Container fluid className="p-0 h-100">
       <Header />
@@ -11,23 +11,33 @@ const Profile = () => {
         <Col className="mx-3">
           <Card>
             <Card.Body>
-              <Card.Title className="text-center mb-2">user.name</Card.Title>
+              <Card.Title className="text-center mb-2">
+                {userData.userName}
+              </Card.Title>
               <Form>
                 <Form.Group controlId="formFirstName" className="mb-3">
-                  <Form.Control type="text" value="first.name" disabled />
+                  <Form.Control
+                    type="text"
+                    value={userData.firstName}
+                    disabled
+                  />
                 </Form.Group>
                 <Form.Group controlId="formLastName" className="mb-3">
-                  <Form.Control type="text" value="last.name" disabled />
+                  <Form.Control
+                    type="text"
+                    value={userData.lastName}
+                    disabled
+                  />
                 </Form.Group>
                 <Form.Group controlId="formName" className="mb-3">
-                  <Form.Control type="text" value="user.name" disabled />
+                  <Form.Control
+                    type="text"
+                    value={userData.userName}
+                    disabled
+                  />
                 </Form.Group>
                 <Form.Group controlId="formEmail" className="mb-3">
-                  <Form.Control
-                    type="email"
-                    value="user.name@email.com"
-                    deisabled
-                  />
+                  <Form.Control type="email" value={userData.email} deisabled />
                 </Form.Group>
               </Form>
             </Card.Body>
